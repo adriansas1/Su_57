@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{ /** get rid of extra white space when color background header */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #030202; */
+    color: white;
+    font-size: 1.8rem;
+}
+
+.dark{
+    --dark1: #45424b;
+}
+
+.container{
+    background-color:#12161d;
+}
+
+img{
+    background-color: #f3f3f3;
+    max-width: 5rem;
+    margin: 1rem;
+    vertical-align: middle;
+}
+
+.container h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.container ul{
+    text-align: center;
+    display: inline-block; /** make the all the function*/
+                           /** same row with the logo and h3*/
+    float: right; /** get all the <li> align to the right side of website*/
+}
+
+li{
+    display: inline; /** display: inline -> make the <li> be horizontal*/
+    padding: 14px 16px;
+    text-decoration: none; /*! the dot disappear */
+}
+
+a:hover{
+    background-color: #45424b;
+}
+
+a{ /**get rid of underline link*/
+    text-decoration: none;
+    color: white;
+    
+}
+
+.hero h1{
+    color: rgb(43, 203, 214);
+}
+
+.hero{
+    display: block;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    /* background: #333; */ /**This line is more like a trick to make it easier to do*/
+    /* margin-bottom: 100px; */
+    /* padding: 200px 0; */
+    position: relative;
+    /* overflow: hidden; */
+    min-height: 65vh;
+}
+
+.video-bg{
+    position: absolute;
+    z-index: -1; /**Use with the trick of background#333 - push the video underneath the text layer then 'turn off' the background#333*/
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /** make the video dead center */
+    min-width: 100%;
+    min-height: 100%; 
+} 
+
+/*! DETAILS  */
+.content_origin{
+    background-color: #21252e;
+}
+
+.content_origin, .li, h1{
+    color: #fff;
+}
+
+
+/*! Components*/
+.section{
+    padding: 48px 0;
+}
+.section-grey{
+    background-color: #21252e;
+}
+.grid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+}
+
+.box-content-media{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.box-content-media .box-reverse .box-media{
+    padding-left: 0;
+    padding-right: 48px;
+}
+
+.box-content-media .box-media{
+    flex: 0 0 50%;
+    /* box-sizing: border-box; */
+    
+}
+
+.video-wrap video{
+    display: block;
+    height: auto;
+    width: 100%; 
+}
+
+video{
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+
+}
+
